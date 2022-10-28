@@ -13,4 +13,4 @@ error constraint. Our extensive experimental study over image classification and
 that L-GreCo is effective across all three compression families, and achieves up to 2.5× training speedup and
 up to 5× compression improvement over efficient implementations of standard approaches while recovering
 full accuracy. Moreover, we show that L-GreCo is complementary to existing adaptive algorithms improving
-their compression ratio by 50% and practical throughput by 66%.
+their compression ratio by 50% and practical throughput by 66%
