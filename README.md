@@ -1,5 +1,5 @@
 # L-GreCo: AN EFFICIENT AND GENERAL FRAMEWORK FOR LAYERWISE-ADAPTIVE GRADIENT COMPRESSION
-<div style="text-align: justify">
+<div style="text-align: justify;">
 Data-parallel distributed training of deep neural networks (DNN) has gained very widespread adoption, but
 can still experience communication bottlenecks due to gradient transmission. To address this issue, entire
 families of lossy gradient compression mechanisms have been developed, including quantization, sparsification,
