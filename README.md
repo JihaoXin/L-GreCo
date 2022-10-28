@@ -13,4 +13,8 @@ error constraint. Our extensive experimental study over image classification and
 that L-GreCo is effective across all three compression families, and achieves up to 2.5× training speedup and
 up to 5× compression improvement over efficient implementations of standard approaches while recovering
 full accuracy. Moreover, we show that L-GreCo is complementary to existing adaptive algorithms improving
-their compression ratio by 50% and practical throughput by 66%
+their compression ratio by 50% and practical throughput by 66%.
+For ResNet50 and Transformer-XL experiments we used https://github.com/NVIDIA/DeepLearningExamples.
+For Transformer-LM experiments we used https://github.com/facebookresearch/fairseq.
+For ResNet18 experiment we used the ResNet18 model provided https://github.com/epfml/powersgd.
+You can find all hooks in a folder named 'hooks', and also you can use 'lgreco.sh' file in each experiment in order to run the task with lgreco. ResNet18 is a natural entery point.
