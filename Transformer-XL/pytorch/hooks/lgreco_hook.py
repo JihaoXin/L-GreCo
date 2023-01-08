@@ -491,8 +491,10 @@ def powerSGD_hook(
         state.tensors_shape_m.append(tensors_shape_m)
         
         if dist.get_rank() == 0:
-            print("Ns: ", tensors_shape_n)
-            print("Ms: ", tensors_shape_m)
+            #print("Ns: ", tensors_shape_n)
+            #print("Ms: ", tensors_shape_m)
+            logger.info("Ns: {}".format(tensors_shape_n))
+            logger.info("Ms: {}".format(tensors_shape_m))
 
     # DP Algorithm
     DPBUCKETS = 10000
@@ -600,7 +602,8 @@ def powerSGD_hook(
                     j += 1
                 i += 1
 
-        print("optimal compression parameters = ", state.opt_compress_param)
+        #print("optimal compression parameters = ", state.opt_compress_param)
+        logger.info("optimal compression parameters = {}".format(state.opt_compress_param))
 
     if state.iter_rel % state.adjust_freq == 0 and bucket_index == 0 and state.iter_rel > 0:
         # Broadcast the Optimal Compression to All Workers
